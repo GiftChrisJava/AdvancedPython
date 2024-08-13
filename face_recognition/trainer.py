@@ -48,3 +48,6 @@ def get_images_with_id(path):
 
 # Example usage
 ids, faces = get_images_with_id(path)
+recognizer.train(faces, ids)
+recognizer.save("recogniser/trainer.yml")  # Save the trained model to a file
+cv2.destroyAllWindows()  # Close all windows after training
