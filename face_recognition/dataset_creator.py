@@ -7,7 +7,7 @@ cam=cv2.VideoCapture(0); # zero for web camera
 
 # function for sqlite database
 def insertOrUpdate(Id,Name,Age):
-    conn=sqlite3.connect("database.db ") # connect to database
+    conn=sqlite3.connect("sqlite.db ") # connect to database
     cmd = "SELECT * FROM STUDENTS WHERE ID=" + str(Id)
     cursor = conn.execute(cmd)   # cursor has to execute statement
     
