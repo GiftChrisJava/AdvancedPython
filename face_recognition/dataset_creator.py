@@ -2,7 +2,7 @@ import cv2          #opencv for camera
 import numpy as np      #numpy array
 import sqlite3         #sqlite is database
 
-faceDetect=cv2.CascadeClassifier('haarcascade/haarcascade_frontalface_default.xml');
+faceDetect=cv2.CascadeClassifier('haarcascade/haarcascade_frontalface_default.xml')
 cam=cv2.VideoCapture(0); # zero for web camera
 
 # function for sqlite database
